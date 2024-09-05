@@ -169,6 +169,7 @@ const removeText = () => {
 };
 
 const enableAll = () => {
+  count = 0;
   mainGame.classList.add("glow");
   smallBox.forEach((box) => {
     box.disabled = false;
@@ -179,6 +180,7 @@ const enableAll = () => {
 const newGameStart = () => {
   result.classList.add("hide");
   realGame.classList.remove("hide");
+  finalWinnerFound = false;
   enableAll();
   removeText();
 };
