@@ -7,6 +7,37 @@
     <title>Tic Tac Toe</title>
   </head>
   <body>
-    <a href="./home.html">Enter</a>
+    <main>
+      <div class="head">Let's Play, Tic Tac Toe</div>
+      <div class="rules">
+        <p id="welcome">Welcome</p>
+        <ul id="rule">
+          <li>
+            The Game contains 9 big blocks, and each of them again contains 9
+            smaller blocks which are to be filled with either "o" or "x".
+          </li>
+          <li>
+            When a player marks a smaller block within a larger block, the next
+            player must mark a block within the corresponding larger block.
+          </li>
+          <li>
+            For example, if a player marks the 5th smaller block of the 1st
+            larger block, the next player must mark any block within the 5th
+            larger block.
+          </li>
+          <li>
+            A larger block is considered occupied when a player wins the
+            tic-tac-toe game within that larger block, and all the smaller block
+            will become disabled for the rest of the game.
+          </li>
+          <li>
+            If a player got their chance in a larger block that is already
+            occupied, then the whole board will become available for the
+            markings.
+          </li>
+        </ul>
+      </div>
+      <button id="new_btn"><a href="./home.html">Enter</a></button>
+    </main>
   </body>
 </html>
