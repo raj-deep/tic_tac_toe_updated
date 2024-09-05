@@ -3,12 +3,14 @@
     padding: 0;
 }
 
+
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background-color: #FFF5E4;
     background-image: url("https://media.istockphoto.com/id/1292919739/vector/tic-tac-toe-school-game-colorful-seamless-pattern-for-fabric-and-print-on-the-paper.jpg?s=612x612&w=0&k=20&c=Q4gMspKHffPmhKuofb_Rb_WCD8uAgbsbXSKuWEcziM8=");
 }
@@ -27,7 +29,7 @@ main{
 .rules{
     /* text-align: center; */
     background-color: rgba(0, 0,0, 0.7);
-    height: 60vmin;
+    /* height: 60vmin; */
     /* width: 80vmin; */
     display: flex;
     align-items: center;
@@ -51,7 +53,7 @@ main{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 2vmin;
     margin-left: 3vmin;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     color: white;
 }
 
