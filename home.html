@@ -7,72 +7,132 @@
     <title>Tic Tac Toe</title>
   </head>
   <body>
+    <div class="result hide">
+      <p class="head" id="resultName"></p>
+      <button id="new_btn">New Game</button>
+    </div>
+    <div class="mainGame">
       <div class="head">Let's Play, Tic Tac Toe</div>
-      <div class="Game">
+      <div class="Game glow">
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="0" data-col="0"></button>
+          <button class="s_box" data-row="0" data-col="1"></button>
+          <button class="s_box" data-row="0" data-col="2"></button>
+          <button class="s_box" data-row="0" data-col="3"></button>
+          <button class="s_box" data-row="0" data-col="4"></button>
+          <button class="s_box" data-row="0" data-col="5"></button>
+          <button class="s_box" data-row="0" data-col="6"></button>
+          <button class="s_box" data-row="0" data-col="7"></button>
+          <button class="s_box" data-row="0" data-col="8"></button>
         </div>
+
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="1" data-col="0"></button>
+          <button class="s_box" data-row="1" data-col="1"></button>
+          <button class="s_box" data-row="1" data-col="2"></button>
+          <button class="s_box" data-row="1" data-col="3"></button>
+          <button class="s_box" data-row="1" data-col="4"></button>
+          <button class="s_box" data-row="1" data-col="5"></button>
+          <button class="s_box" data-row="1" data-col="6"></button>
+          <button class="s_box" data-row="1" data-col="7"></button>
+          <button class="s_box" data-row="1" data-col="8"></button>
         </div>
+
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="2" data-col="0"></button>
+          <button class="s_box" data-row="2" data-col="1"></button>
+          <button class="s_box" data-row="2" data-col="2"></button>
+          <button class="s_box" data-row="2" data-col="3"></button>
+          <button class="s_box" data-row="2" data-col="4"></button>
+          <button class="s_box" data-row="2" data-col="5"></button>
+          <button class="s_box" data-row="2" data-col="6"></button>
+          <button class="s_box" data-row="2" data-col="7"></button>
+          <button class="s_box" data-row="2" data-col="8"></button>
         </div>
+
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="3" data-col="0"></button>
+          <button class="s_box" data-row="3" data-col="1"></button>
+          <button class="s_box" data-row="3" data-col="2"></button>
+          <button class="s_box" data-row="3" data-col="3"></button>
+          <button class="s_box" data-row="3" data-col="4"></button>
+          <button class="s_box" data-row="3" data-col="5"></button>
+          <button class="s_box" data-row="3" data-col="6"></button>
+          <button class="s_box" data-row="3" data-col="7"></button>
+          <button class="s_box" data-row="3" data-col="8"></button>
         </div>
+
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="4" data-col="0"></button>
+          <button class="s_box" data-row="4" data-col="1"></button>
+          <button class="s_box" data-row="4" data-col="2"></button>
+          <button class="s_box" data-row="4" data-col="3"></button>
+          <button class="s_box" data-row="4" data-col="4"></button>
+          <button class="s_box" data-row="4" data-col="5"></button>
+          <button class="s_box" data-row="4" data-col="6"></button>
+          <button class="s_box" data-row="4" data-col="7"></button>
+          <button class="s_box" data-row="4" data-col="8"></button>
         </div>
+
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="5" data-col="0"></button>
+          <button class="s_box" data-row="5" data-col="1"></button>
+          <button class="s_box" data-row="5" data-col="2"></button>
+          <button class="s_box" data-row="5" data-col="3"></button>
+          <button class="s_box" data-row="5" data-col="4"></button>
+          <button class="s_box" data-row="5" data-col="5"></button>
+          <button class="s_box" data-row="5" data-col="6"></button>
+          <button class="s_box" data-row="5" data-col="7"></button>
+          <button class="s_box" data-row="5" data-col="8"></button>
         </div>
+
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="6" data-col="0"></button>
+          <button class="s_box" data-row="6" data-col="1"></button>
+          <button class="s_box" data-row="6" data-col="2"></button>
+          <button class="s_box" data-row="6" data-col="3"></button>
+          <button class="s_box" data-row="6" data-col="4"></button>
+          <button class="s_box" data-row="6" data-col="5"></button>
+          <button class="s_box" data-row="6" data-col="6"></button>
+          <button class="s_box" data-row="6" data-col="7"></button>
+          <button class="s_box" data-row="6" data-col="8"></button>
         </div>
+
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="7" data-col="0"></button>
+          <button class="s_box" data-row="7" data-col="1"></button>
+          <button class="s_box" data-row="7" data-col="2"></button>
+          <button class="s_box" data-row="7" data-col="3"></button>
+          <button class="s_box" data-row="7" data-col="4"></button>
+          <button class="s_box" data-row="7" data-col="5"></button>
+          <button class="s_box" data-row="7" data-col="6"></button>
+          <button class="s_box" data-row="7" data-col="7"></button>
+          <button class="s_box" data-row="7" data-col="8"></button>
         </div>
+
         <div class="b_box">
-          <button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button><button class="s_box"></button
-          ><button class="s_box"></button>
+          <p class="b_box_text hide"></p>
+          <button class="s_box" data-row="8" data-col="0"></button>
+          <button class="s_box" data-row="8" data-col="1"></button>
+          <button class="s_box" data-row="8" data-col="2"></button>
+          <button class="s_box" data-row="8" data-col="3"></button>
+          <button class="s_box" data-row="8" data-col="4"></button>
+          <button class="s_box" data-row="8" data-col="5"></button>
+          <button class="s_box" data-row="8" data-col="6"></button>
+          <button class="s_box" data-row="8" data-col="7"></button>
+          <button class="s_box" data-row="8" data-col="8"></button>
         </div>
       </div>
       <button id="reset_btn">Reset Game</button>
+    </div>
+    <script src="/homeScript.js"></script>
   </body>
 </html>

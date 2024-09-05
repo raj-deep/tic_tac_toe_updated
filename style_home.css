@@ -8,31 +8,58 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vmin;
+    /* height: 100vmin; */
     background-color: #FFF5E4;
+    background-image: url("https://media.istockphoto.com/id/1292919739/vector/tic-tac-toe-school-game-colorful-seamless-pattern-for-fabric-and-print-on-the-paper.jpg?s=612x612&w=0&k=20&c=Q4gMspKHffPmhKuofb_Rb_WCD8uAgbsbXSKuWEcziM8=");
+}
+
+.mainGame{
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .head{
     font-size: 5vmin;
     font-weight: bold;
-    color: #CD5C08;
-    margin-bottom: 5px;
+    color: white;
+    padding: 2vmin;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.67);
+    margin-bottom: 3vmin;
+    border: 2px dashed bisque;
 }
 
 .Game{
     display: flex;
     flex-wrap: wrap;
-    width: 52.5vmin;
-    height: 52.5vmin;
+    width: 54vmin;
+    margin-bottom: 3vmin;
+    height: 54vmin;
+    padding: 0.5vmin;
+}
+
+.b_box_text{
+   position: absolute;
+   z-index: 1;
+   /* text-align: center; */
+    left: 20%;
+    /* font-size: small; */
 }
 
 .b_box{
+    color: white;
+    font-size: 15vmin;
     width: 16.5vmin;
     height: 16.5vmin;
     margin: 0.5vmin;
+    padding: 0.25vmin;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    background-color: #C1D8C3;
+    background-color: #000000;
 }
 
 .s_box{
@@ -41,14 +68,50 @@ body{
     margin: 0.25vmin;
     background-color: #6A9C89;
     border: 0.5px;
+    color: white;
+    text-align: center;
+    font-size: 4vmin;
+    font-weight: bold;
 }
 
 #reset_btn{
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 15px;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 1.5vmin;
-    background-color: #C1D8C3;
-    color: #CD5C08;
+    font-size: 3vmin;
+    background-color: #051022;
+    color: #fff200;
+    border: 2px solid white;
+}
+
+.hide{
+    display: none !important;
+}
+
+.glow {
+    /* width: 200px;
+    height: 200px; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px rgba(166, 162, 157, 0.825), 0 0 2px rgba(200, 186, 183, 0.6), 0 0 2px rgba(255, 255, 255, 0.767);
+    /* border-radius: 10px; Optional: To give rounded corners */
+  }
+
+.result{
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#new_btn{
+    padding: 10px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 3vmin;
+    background-color: #051022;
+    color: #fff200;
+    border: 2px solid white;
 }
